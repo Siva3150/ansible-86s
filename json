@@ -1,0 +1,21 @@
+{
+    "Name": "siva",
+    "DOB": "23-07-1998",
+    "address": "tanuku",
+    "Addresses": [
+        {
+            "type": "current",
+            "city": "tanuku",
+            "pincode": "534216",
+            "street": "vikas colony"
+        },
+        {
+            "type": "temporary",
+            "city": "tanuku",
+            "pincode": "534216",
+            "street": "vikas colony"
+        }
+
+    ],
+    "skills": ["java", "devops", "html"]
+}

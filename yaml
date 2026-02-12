@@ -1,0 +1,13 @@
+- name: "siva"
+  dob: "23-07-1998"
+  age: 25
+  address:
+  - door no: 1-288/1 
+    street: vikas colony 
+    city: tanuku 
+    pincode: 534216 
+  skills:
+  - java 
+  - devops 
+  - Kubernetes
+  - Docker 
