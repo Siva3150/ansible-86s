@@ -1,0 +1,9 @@
+- name: play-01 
+  hosts: frontend 
+  tasks: 
+  - name: palybook-01 and task-01 
+    ansible.built.in.debug:
+     msg: "play-01 and task-01"
+  - name: palybook-2 and task-02 
+    ansible.builtin.debug: 
+     msg: "play-02 and task-02"
