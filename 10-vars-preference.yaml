@@ -1,8 +1,8 @@
 - name: play level variables 
   hosts: local 
   connection: local # Ansible is connecting to localhost
-  vars: 
-    NAME: From play level
+  # vars: 
+  #   NAME: From play level
   # vars_files:
   # - course.yaml
   tasks: 
