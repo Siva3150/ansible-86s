@@ -1,8 +1,8 @@
 - name: Variable preference
   hosts: local 
   connection: local # Ansible is connecting to localhost
-  vars: 
-    NAME: From play level
+  # vars: 
+  #   NAME: From play level
   # vars_files:
   # - course.yaml
   # vars_prompt:
