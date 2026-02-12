@@ -1,0 +1,7 @@
+- name: Inventory file variables 
+  hosts: local 
+  connection: local # Ansible is connecting to localhost
+  tasks: 
+  - name: print inventory file variables
+    ansible.builtin.debug: 
+     msg: "Course name is: {{ COURSE }}, Duration is: {{ DURATION }}, and Trainer is: {{ TRAINER }}"
