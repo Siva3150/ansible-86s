@@ -1,13 +1,17 @@
 - name: play level variables 
   hosts: local 
   connection: local # Ansible is connecting to localhost
-  # vars: 
-  #   NAME: From play level
-  # vars_files:
-  # - course.yaml
+  vars: 
+    NAME: From play level
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: NAME 
+    prompt: please enter your NAME ?
+    private: false
   tasks: 
   - name: print play level vars 
-    # vars: 
-    #  NAME: from task level
+    vars: 
+     NAME: from task level
     ansible.builtin.debug: 
      msg: "Name: {{ NAME }}"
