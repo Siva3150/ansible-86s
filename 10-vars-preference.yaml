@@ -7,7 +7,7 @@
   - course.yaml
   tasks: 
   - name: print play level vars 
-    vars: 
-     NAME: from task level
+    # vars: 
+    #  NAME: from task level
     ansible.builtin.debug: 
      msg: "Name: {{ NAME }}"
