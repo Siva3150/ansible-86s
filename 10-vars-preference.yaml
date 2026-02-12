@@ -15,3 +15,13 @@
     #  NAME: from task level
     ansible.builtin.debug: 
      msg: "Name: {{ NAME }}"
+     
+
+# Variable Prefernce:
+
+#   1. Command line 
+#   2. From task level 
+#   3. From var file 
+#   4. From Prompt 
+#   5. From play level 
+#   6. From inventory 
