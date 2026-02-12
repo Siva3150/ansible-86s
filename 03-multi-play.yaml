@@ -2,9 +2,9 @@
   hosts: frontend 
   tasks: 
   - name: palybook-01 and task-01 
-    ansible.built.in.debug:
+    ansible.builtin.debug:
      msg: "play-01 and task-01"
-     
+
   - name: palybook-1 and task-02 
     ansible.builtin.debug: 
      msg: "play-01 and task-02"
