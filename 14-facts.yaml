@@ -1,6 +1,7 @@
 - name: checkling facts 
   hosts: local 
-  connection: local 
+  connection: local
+  become: yes 
   tasks:
   - name: install nginx if redhat 
     ansible.builtin.dnf: 
