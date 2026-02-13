@@ -27,8 +27,8 @@
 
   - name: print map to list 
     ansible.builtin.debug: 
-     msg: "tags are: {{ tags | dict2items }}"
+     msg: "tags are: {{ tags | dict2items }}" #map to list 
 
   - name: print list to map
     ansible.builtin.debug: 
-     msg: "tags are: {{ tags | items2dict }}"
+     msg: "tags are: {{ listTags  | items2dict }}" # list to map 
