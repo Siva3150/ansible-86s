@@ -3,6 +3,13 @@
   connection: local 
   vars:
    technologies: Devops, Linux, Shell, Ansible # string
+   name: "Sivakumar reddy M" # dictionary or map 
+   gmail: Info@GMAIL.COM
+    # dictionary == map
+   tags:
+      Application: payment
+      Environment: dev
+
   tasks: 
   - name: Print Default variable 
     ansible.builtin.debug: 
@@ -10,4 +17,8 @@
 
   - name: print string to list 
     ansible.builtin.debug: 
-     msg: "Technologies are {{ technologies | split(',') }}"
+     msg: "Technologies are {{ technologies | split(',') }}" #string to list 
+
+  - name: print map to list 
+    ansible.builtin.debug: 
+     msg: "tags are: {{ tags | dic2items }}"
