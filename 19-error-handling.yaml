@@ -1,4 +1,4 @@
-- name: user craetion
+- name: user creation
   hosts: local 
   connection: local 
   tasks: 
@@ -10,3 +10,7 @@
   - name: print the output 
     ansible.builtin.debug: 
      msg: "{{ user_output }}"
+
+  - name: user creation 
+    ansible.builtin.command: useradd roboshop
+    when: user_output.rc = 0
