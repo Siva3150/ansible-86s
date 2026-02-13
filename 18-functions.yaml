@@ -5,6 +5,7 @@
    technologies: Devops, Linux, Shell, Ansible # string
    name: "Sivakumar reddy M" # dictionary or map 
    gmail: Info@GMAIL.COM
+   ipaddress: "19222.168.0.1"
     # dictionary == map
    tags:
       Application: payment
@@ -32,3 +33,7 @@
   - name: print list to map
     ansible.builtin.debug: 
      msg: "tags are: {{ listTags  | items2dict }}" # list to map 
+
+  - name: read yaml and take it into a variable 
+    ansible.builtin.set_fact:
+     msg: "tags are: {{ lookup('file', 'student.yaml') | from_yaml }}
