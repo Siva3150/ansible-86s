@@ -9,6 +9,12 @@
    tags:
       Application: payment
       Environment: dev
+    # List
+    listTags:
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev
 
   tasks: 
   - name: Print Default variable 
@@ -22,3 +28,7 @@
   - name: print map to list 
     ansible.builtin.debug: 
      msg: "tags are: {{ tags | dict2items }}"
+
+  - name: print list to map
+    ansible.builtin.debug: 
+     msg: "tags are: {{ tags | items2dict }}"
